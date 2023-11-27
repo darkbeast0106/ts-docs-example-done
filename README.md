@@ -18,3 +18,9 @@ A dokumentáció előállításához az alábbi utasítás használható:
 ```sh
 npx typedoc --entryPointStrategy expand ./src --exclude "**/*vite-env.*.ts"
 ```
+
+Az utasítás a [package.json](./package.json) állományban felvett scripttel is futtatható.
+
+```sh
+npm run docs
+```
