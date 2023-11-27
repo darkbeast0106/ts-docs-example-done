@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS docs</title>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <h2>Új ember felvétele</h2>
+        <form id="personForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Név:</label>
+            <input type="text" id="name" class="form-control" placeholder="Név" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" id="email" class="form-control" placeholder="E-mail" required>
+          </div>
+          <div class="mb-3">
+            <label for="job" class="form-label">Munka:</label>
+            <input type="text" id="job" class="form-control" placeholder="Munka" required>
+          </div>
+          <button type="submit" class="btn btn-success">Felvesz</button>
+          <button type="reset" class="btn btn-danger">Alaphelyzetbe</button>
+        </form>
+      </section>
+      <section class="mt-5">
+        <h2>Emberek</h2>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Név</th>
+              <th>E-mail</th>
+              <th>Munka</th>
+            </tr>
+          </thead>
+          <tbody id="people"></tbody>
+        </table>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
